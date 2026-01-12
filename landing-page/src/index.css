@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header, nav, h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+#behind_me{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#behind_me img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main{
+    color: white;
+    height: 500vh;
+    background: #000000ae;
+    /* height: 100; */
+    width: 100%;
+ }
+
+main header #logo{
+    width: 48px;
+    max-width: 10vw;
+
+}
+
+main header{
+    display: flex;
+    padding: 3%;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+main header nav{
+    list-style: none;
+    display: flex;
+    gap: 4%;
+}
+
+main header nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+main header div{
+    width:  20%;
+    height: 100%;
+    background: pink;
+}
+
+main header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+section#hero_page{
+    /* background: rgba(255, 0, 0, 0.496); */
+    min-height: 100vh;
+    width: 100%;
+    padding: 4%;
+    text-align: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    justify-content: left;
+}
+
+section#hero_page h1{
+    /* font-family: RO; */
+  font-weight: 400;
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.414);
+  /* font-family: 'Courier New', Courier, monospace; */
+    transform: translateY(-60%);
+    font-family: "Inter", sans-serif;
+}
+
+section#hero_page h1 span{
+ color: orangered;
+ font-family: "Caveat", cursive;
+ font-size: 9vw;
+}
+
+
+
+section#hero_page h1 {
+  color: rgba(255,255,255,0.75);
+  max-width: 900px;
+  line-height: 1.4;
+}
+
+
+section#new_pge{
+    background: #f0eeea;
+    
+    min-height: 200vh;
+}
+
+
+section#pricing_page{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+    background: #f0eeea;
+    min-height: 100vh;
+}
+    
+
+section#new_pge{
+    color: black;
+}
+
+section#pricing_page #groups{
+    display: flex;
+    width: 100%;
+    /* border: solid; */
+    gap: 6%;
+}
+
+
+
+@media (max-width:1000px) {
+    section#pricing_page #groups{
+        display: flex;
+        flex-wrap: wrap;
+
+    } 
+}
+
+section#pricing_page article{
+    color: #000000;
+    /* border: solid black; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5%;
+    border-radius: 0.32rem;
+}
+
+section#pricing_page article button{
+    width: 100%;
+    height: 3rem;
+}
+
+
+section#pricing_page article{
+    background: #ffffff;
+    color: #111;
+    border-radius: 18px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#pricing_page article:hover{
+    transform: translateY(-8px);
+}
+
+section#pricing_page article:nth-of-type(1){
+    border: 2px solid #ddd;
+}
+
+section#pricing_page article:nth-of-type(1) h2{
+    color: #555;
+}
+
+section#pricing_page article:nth-of-type(1) button{
+    background: #333;
+    color: white;
+}
+
+
+section#pricing_page article:nth-of-type(2){
+    border: 3px solid orangered;
+    z-index: 2;
+}
+
+section#pricing_page article:nth-of-type(2) h2{
+    color: orangered;
+}
+
+section#pricing_page article:nth-of-type(2) button{
+    background: orangered;
+    color: white;
+}
+
+
+section#pricing_page article:nth-of-type(2){
+    border: 3px solid orangered;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+section#pricing_page article:nth-of-type(2) h2{
+    color: orangered;
+}
+section#pricing_page article:nth-of-type(2) button{
+    border: none;    
+}
+
+
+
+section#pricing_page article:nth-of-type(2) button{
+    background: orangered;
+    color: white;
+}
+
+
+section#pricing_page article:nth-of-type(3){
+    background: linear-gradient(180deg, #111, #000);
+    color: white;
+}
+
+section#pricing_page article:nth-of-type(3) h2,
+section#pricing_page article:nth-of-type(3) h1{
+    color: gold;
+}
+
+section#pricing_page article:nth-of-type(3) li{
+    color: #ddd;
+}
+
+section#pricing_page article:nth-of-type(3) button{
+    background: gold;
+    color: black;
+    font-weight: 700;
+}
+
+section#pricing_page #caption{
+    padding: 15%;
+    color: black;
+    text-align: center;
+}
+
+section#pricing_page #down{
+    color: #000;
+    padding-top: 15%;
+    padding-bottom: 30%;
+    text-align: center;
+}
+
+footer{
+    background: #000;
+    height: 25%;
+}
+
+header{
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+header.sticky{
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+
+a{
+   transition: all 0.1s linear;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+section#new_pge {
+    padding-bottom: 40%;
+}
+
+
+section#new_pge #caption{
+    text-align: center;
+}
+
+
+section#new_pge #flash_cards{
+    padding: 2%;
+    min-height: 150vh;
+    display: grid;
+   grid-template-columns: 100%;
+   gap: 2%;
+}
+
+#flash_cards span:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#flash_cards span:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 40% 59%;
+    gap: 2%;
+}
+
+#flash_cards span:nth-of-type(2) article{
+      /* border: solid; */
+}
+
+
+#flash_cards span:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 100%;
+    /* border: solid; */
+}
+
+
+#flash_cards article{
+    /* background: url('../public/gym_hottie.jpg') no-repeat; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: all 0.2s linear;
+}
+
+#flash_cards article:nth-of-type(1){
+    background: url('../public/one.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: all 0.2s linear;
+}
+
+
+#flash_cards #hot article:nth-of-type(2){
+    background: url('../public/two.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: all 0.2s linear;
+}
+
+
+#flash_cards #hot article:nth-of-type(1){
+    background: url('../public/three.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: all 0.2s linear;
+}
+
+
+#flash_cards article:nth-of-type(3){
+    background: url('../public/three.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    transition: all 0.2s linear;
+}
+
+
+
+
+
+#flash_cards article div{
+    transition: all 0.2s linear;
+    width: 100%;
+    /* display: none; */
+    height: 0;
+    background: rgba(255, 68, 0, 0);
+    padding: 2%;
+}
+
+#flash_cards article:hover div{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 68, 0, 0.83);
+}
+
+#flash_cards article div p,#flash_cards article div h3{
+ display: none;
+ opacity: 0;
+}
+
+
+#flash_cards article:hover div p,#flash_cards article:hover div h3{
+ display: flex;
+ opacity: 0.9;
+
+}
+
