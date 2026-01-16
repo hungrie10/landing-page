@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import gym_hottie from "../public/gym_hottie.jpg"
 import dumbell from "../public/dumbell.png"
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
+// import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 
 
@@ -21,11 +22,11 @@ function App() {
       console.log("Entered pricing section");
 
       setTimeout(() => {
-        if(!header.classList.contains('sticky')){
-          header.classList.add("sticky");
+        if(header.classList.contains('sticky')){
+          ''
         }
         else {
-          ''
+          header.classList.add("sticky");
         }
       }, 2000);
       
@@ -54,25 +55,26 @@ function App() {
         <header ref={headRef}>
           <img src={dumbell} id='logo' alt="" />
 
-          <nav>
-            <ul>
-             <li>
-              <Link>Home</Link>
-             </li>
-             <li>
-              <Link>Features</Link>
-             </li>
-             <li>
-              <Link>About</Link>
-             </li>
-             <li>
-              <Link>Pricing</Link>
-             </li>
-             <li>
-              <Link>Blogs</Link>
-              </li>
-              </ul>
-          </nav>
+      <nav>
+  <ul>
+    <li>
+      <Link to="#hero_page">Home</Link>
+    </li>
+    <li>
+      <Link to="#features_page">Features</Link>
+    </li>
+    <li>
+      <Link to="#new_pge">About</Link>
+    </li>
+    <li>
+      <Link to="#pricing_page">Pricing</Link>
+    </li>
+    <li>
+      <Link to="#blogs">Blogs</Link>
+    </li>
+  </ul>
+</nav>
+
 
         
         </header>
@@ -199,7 +201,88 @@ function App() {
           </div>
         </section>
         
+<section id='features_page'>
+  <div id="inner_feature">
+    <article>
+      <h2>Smart Workout Plans</h2>
+      <p>
+        Train with purpose using programs designed to match your goals, strength level,
+        and schedule. No guessing. Just clear direction from day one.
+      </p>
+    </article>
+
+    <article>
+      <h2>Progress Tracking</h2>
+      <p>
+        Every rep, every set, every win is recorded. Watch your strength,
+        endurance, and confidence grow week by week.
+      </p>
+    </article>
+
+    <article>
+      <h2>Expert Coaching</h2>
+      <p>
+        Learn proper form, technique, and mindset from trainers who understand
+        what real progress looks like, both in and out of the gym.
+      </p>
+    </article>
+
+    <article>
+      <h2>Flexible Training</h2>
+      <p>
+        Whether you train at home or in the gym, early mornings or late nights,
+        your plan adapts to your lifestyle, not the other way around.
+      </p>
+    </article>
+
+    <article>
+      <h2>Nutrition Guidance</h2>
+      <p>
+        Fuel your workouts with simple, practical nutrition tips that support
+        muscle growth, fat loss, and recovery without extreme diets.
+      </p>
+    </article>
+
+    <article>
+      <h2>Motivation & Community</h2>
+      <p>
+        Stay consistent with challenges, progress milestones, and a community
+        that pushes you to show up even on the tough days.
+      </p>
+    </article>
+  </div>
+</section>
       
+
+        <footer>
+          <section id='inner_footer'>
+            <img src={dumbell} alt="" />
+
+           
+            <nav>
+              <h2>Links</h2>
+                <ul>
+             <li>
+              <Link>Home</Link>
+             </li>
+             <li>
+              <Link>Features</Link>
+             </li>
+             <li>
+              <Link>About</Link>
+             </li>
+             <li>
+              <Link>Pricing</Link>
+             </li>
+             <li>
+              <Link>Blogs</Link>
+              </li>
+              </ul>
+            </nav>
+
+           
+          </section>
+      </footer>
         
       </main>
     </>
